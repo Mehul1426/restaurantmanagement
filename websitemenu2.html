@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    .grid-container{display: grid;  gap: 10px; 
+        background-color: rgb(235, 147, 16); padding: 10px; height: 100px;}
+        .grid-container>div{background-color: bisque; text-align: center;padding: auto  ; font-size: 30px;}
+        .container{display: grid; grid-template-columns: 2fr 1fr; gap: 5px; 
+            padding: 10px; margin: 10px; background-color: blanchedalmond; grid-template-areas: "header header" "menu content" "footer footer";}
+            .container>div{background-color: rgb(147, 240, 209); padding: 10px;}
+            .container>div.header{grid-area: header; text-align: center;}
+            .container>div.menu{grid-area: menu;}
+            .container>div.content{grid-area: content;}
+            .container>div.footer{grid-area: footer; text-align: center;}
+            table,td,th{
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 10px; text-align: center;
+    }
+    tr:nth-child(odd){background-color: rgb(8, 134, 238);}
+    tr:nth-child(even){background-color: sienna;}
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <h1 style="text-align: center;">Menu</h1>
+        <!--div class="container">
+            <div class="header" style="font-size: xxx-large;">Jassi de parathe</div>
+            <div class="menu">link 1. <a href="#"></a><br> 
+                              link 2. <a href="#"></a><br>
+                              link 3. <a href="#"></a></div>
+            <div class="content"><i class="fa fa-info" aria-hidden="true" style="font-size: 24px"><h3>About us</h3> </i> 
+                 <p>Jassi De Parathe is a restaurant 
+                                    that serves delicious parathas. We have a variety of parathas to choose from. 
+                                    We also serve snacks like Paneer Tikka, Paneer Roll, and Paneer Pakora. 
+                                    We have a variety of beverages to choose from. We also serve desserts like Gulab Jamun and Rasgulla. 
+                                    We have a friendly staff that is always ready to serve you. 
+                                    We have a clean and hygienic environment. We have a spacious dining area. 
+                                    We have a parking facility. We have a home delivery service. We have a takeaway service.</p></div>
+            <div class="footer" style="font-size: x-large;">&copy; 2024 Restaurant Management System. All Rights Reserved.</div>
+        </div-->
+        <div class="container">
+            <table>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Paneer Paratha</td>
+                    <td>Rs. 50</td>
+                </tr>
+                <tr>
+                    <td>Aloo Paratha</td>
+                    <td>Rs. 40</td>
+                </tr>
+                <tr>
+                    <td>Gobi Paratha</td>
+                    <td>Rs. 40</td>
+                </tr>
+                <tr>
+                    <td>Paneer Tikka</td>
+                    <td>Rs. 60</td>
+                </tr>
+                <tr>
+                    <td>Paneer Roll</td>
+                    <td>Rs. 50</td>
+                </tr>
+                <tr>
+                    <td>Paneer Pakora</td>
+                    <td>Rs. 40</td>
+                </tr>
+            </table><br>
+            <table>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Paneer Paratha</td>
+                    <td>Rs. 50</td>
+                </tr>
+                <tr>
+                    <td>Aloo Paratha</td>
+                    <td>Rs. 40</td>
+                </tr>
+                <tr>
+                    <td>Gobi Paratha</td>
+                    <td>Rs. 40</td>
+                </tr>
+                <tr>
+                    <td>Paneer Tikka</td>
+                    <td>Rs. 60</td>
+                </tr>
+                <tr>
+                    <td>Paneer Roll</td>
+                    <td>Rs. 50</td>
+                </tr>
+                <tr>
+                    <td>Paneer Pakora</td>
+                    <td>Rs. 40</td>
+                </tr>
+            </table><br>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function validation(){
+        var name=document.myform.name.value;
+        var password=document.myform.password.value;
+        var confirmpassword=document.myform.confirmpassword.value;
+        var email=document.myform.email.value;
+        var atposition=email.indexOf("@");
+        document.write(atposition);
+        var dotposition=email.lastIndexOf(".");
+        document.write(dotposition);
+        if(name==""){
+            alert("Name cannot be blank");
+            return false;
+        }
+        else if(password!=confirmpassword){
+            alert("Password and confirm password must be same");
+            return false;
+        }
+        else if(password==""){
+            alert("Password cannot be empty");
+            return false;
+        }
+        else if(email==""){
+            alert("Email cannot be empty");
+            return false;
+        }
+        else if(atposition<1 || dotposition<atposition+2 || dotposition+2>=email.length){
+            alert("Please enter a valid email address");
+            return false;
+        }
+        else if(password.length<6){
+            alert("Password must be at least 6 characters long");
+            return false;
+        }
+        else{
+            alert("Form submitted successfully");
+        }
+    }
+        
+    </script>
+    <style>
+        header{color: black; }     
+        .headerlogo{background-image: url("C:/Users/Admin/Desktop/logo2.png"); width: 220px; height: 100px;
+            background-size: cover; }
+            .mid{background-image: url("C:/Users/Admin/Desktop/Website/2.jpg"); 
+            background-repeat: no-repeat; height: 1000px;}
+            nav {
+            display: flex;
+            background-color: white; margin-left: 650px; margin-top: 0px;
+            }
+        nav a { 
+            color: black;
+            margin:  15px;
+            text-decoration: solid;
+            font-weight: bold; font-size: 20px;
+        }
+        nav a:hover { background-color: aqua;
+            color: red;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="headerlogo">
+        <header>
+            <!--h1 style="margin-left: 250px; width: 5000px;">Jassi De Parathe</h1-->
+            <nav style="margin-left: 650px;">
+                <a href="websitemenu2.html">Menu</a>
+                <a href="#">Punjabiyat</a>
+                <a href="Aboutus.html">About Us</a>
+                <a href="#">Contact us</a>
+                <a href="#">Order now</a>
+                <a href="formvalidation.html">Registration form</a>
+                <a href="aboutus.html">About us</a>
+            </nav>
+        </header> </div>
+    <form name="myform" onsubmit="return validation()">
+        name: <input type="text" name="name"/> <br><br>
+        password: <input type="password" name="password"/> <br><br>
+        confirm password: <input type="password" name="confirmpassword"/> <br><br>
+        email: <input type="text" name="email"/> <br><br>
+        <input type="submit" value="submit" />
+
+
+    </form>
+</body>
+</html>
